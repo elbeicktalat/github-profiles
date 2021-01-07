@@ -1,0 +1,61 @@
+@import "./colors";
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $background;
+  .info {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    #avatar {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 50vmin;
+      height: 50vmin;
+      border-radius: 100%;
+      background-color: $primary;
+      margin: 4rem;
+      border: solid 1vmin $primary;
+      img {
+        border-radius: 100%;
+        width: 50vmin;
+        height: 50vmin;
+      }
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      color: $blue;
+      span {
+        color: $on-background;
+      }
+    }
+  }
+  .search {
+    display: inline-flex;
+    position: fixed;
+    right: 0;
+    margin: 1rem;
+    #button {
+      outline: none;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 0 1rem 1rem 0;
+      background-color: $purple;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    #input {
+      border-radius: 1rem 0 0 1rem;
+      outline: none;
+      border: none;
+      padding: 0.5rem 1rem;
+      background-color: $surface;
+    }
+  }
+}
